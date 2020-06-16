@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		511CD359249961DD00E91DAD /* UIViewController+RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CD358249961DD00E91DAD /* UIViewController+RenderView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		511CD34B2499608A00E91DAD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		511CD34D2499608A00E91DAD /* libCandlestick.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCandlestick.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		511CD358249961DD00E91DAD /* UIViewController+RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RenderView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +57,17 @@
 		511CD34F2499608A00E91DAD /* Candlestick */ = {
 			isa = PBXGroup;
 			children = (
+				511CD357249961B900E91DAD /* Extensions */,
 			);
 			path = Candlestick;
+			sourceTree = "<group>";
+		};
+		511CD357249961B900E91DAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				511CD358249961DD00E91DAD /* UIViewController+RenderView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +102,7 @@
 				TargetAttributes = {
 					511CD34C2499608A00E91DAD = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -114,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511CD359249961DD00E91DAD /* UIViewController+RenderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +253,17 @@
 		511CD3552499608A00E91DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -249,7 +272,13 @@
 		511CD3562499608A00E91DAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
