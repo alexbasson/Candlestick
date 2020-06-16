@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		511CD359249961DD00E91DAD /* UIViewController+RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CD358249961DD00E91DAD /* UIViewController+RenderView.swift */; };
+		511CD35B2499634500E91DAD /* UIControl+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CD35A2499634500E91DAD /* UIControl+Tap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		511CD34D2499608A00E91DAD /* libCandlestick.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCandlestick.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		511CD358249961DD00E91DAD /* UIViewController+RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RenderView.swift"; sourceTree = "<group>"; };
+		511CD35A2499634500E91DAD /* UIControl+Tap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Tap.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				511CD358249961DD00E91DAD /* UIViewController+RenderView.swift */,
+				511CD35A2499634500E91DAD /* UIControl+Tap.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				511CD359249961DD00E91DAD /* UIViewController+RenderView.swift in Sources */,
+				511CD35B2499634500E91DAD /* UIControl+Tap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
